@@ -1,0 +1,13 @@
+pragma solidity ^0.4.17;
+import "./TinyProxy.sol";
+
+contract TinyProxyFactory {
+  mapping(address => mapping(address => address)) proxyFor;
+
+  function make(address to, uint gas,  bool track) public {
+    address proxy = new TinyProxy(to, gas);
+    if(track && proxyFor[to][msg.sender] == 0x0) {
+     proxyFor[msg.sender][to] = proxy; 
+    } 
+  }
+}
