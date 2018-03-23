@@ -1,5 +1,5 @@
-var Migrations = artifacts.require("./Migrations.sol");
+var TinyProxyFactory = artifacts.require("./TinyProxyFactory.sol");
 
 module.exports = function(deployer) {
-  deployer.deploy(Migrations);
+  deployer.deploy(TinyProxyFactory);
 };
