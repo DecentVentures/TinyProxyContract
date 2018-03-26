@@ -18,24 +18,52 @@
         }
       ],
       "name": "make",
-      "outputs": [],
+      "outputs": [
+        {
+          "name": "proxy",
+          "type": "address"
+        }
+      ],
       "payable": false,
       "stateMutability": "nonpayable",
       "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "",
+          "type": "address"
+        },
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "proxyFor",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
     }
   ],
-  "bytecode": "0x6060604052341561000f57600080fd5b6105598061001e6000396000f300606060405260043610610041576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806386d9b0c514610046575b600080fd5b341561005157600080fd5b610091600480803573ffffffffffffffffffffffffffffffffffffffff169060200190919080359060200190919080351515906020019091905050610093565b005b6000838361009f610278565b808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200182815260200192505050604051809103906000f08015156100f257600080fd5b90508180156101b2575060008060008673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16145b1561027257806000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060008673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055505b50505050565b6040516102a5806102898339019056006060604052341561000f57600080fd5b6040516040806102a5833981016040528080519060200190919080519060200190919050507f6c6ffd7df9a0cfaa14ee2cf752003968de6c340564276242aa48ca641b09bce48282604051808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018281526020019250505060405180910390a1816000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055508060018190555050506101ae806100f76000396000f300606060405260043610610041576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806386d1a69f14610043575b005b341561004e57600080fd5b610056610058565b005b60003073ffffffffffffffffffffffffffffffffffffffff163190507f221c08a06b07a64803b3787861a3f276212fcccb51c2e6234077a9b8cb13047a6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1682604051808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018281526020019250505060405180910390a16000600154111561011d576000809054906101000a90505061017f565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166108fc829081150290604051600060405180830381858888f19350505050151561017e57600080fd5b5b505600a165627a7a723058204eafa89125ebc22206af46d17837144c84b53d672196b6697a5b2a03292792a30029a165627a7a723058207100ffcfc511d79d6fa57c5fe169c42e1ecac305537b595e7f89e59bb7224f490029",
-  "deployedBytecode": "0x606060405260043610610041576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806386d9b0c514610046575b600080fd5b341561005157600080fd5b610091600480803573ffffffffffffffffffffffffffffffffffffffff169060200190919080359060200190919080351515906020019091905050610093565b005b6000838361009f610278565b808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200182815260200192505050604051809103906000f08015156100f257600080fd5b90508180156101b2575060008060008673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16145b1561027257806000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060008673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055505b50505050565b6040516102a5806102898339019056006060604052341561000f57600080fd5b6040516040806102a5833981016040528080519060200190919080519060200190919050507f6c6ffd7df9a0cfaa14ee2cf752003968de6c340564276242aa48ca641b09bce48282604051808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018281526020019250505060405180910390a1816000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055508060018190555050506101ae806100f76000396000f300606060405260043610610041576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806386d1a69f14610043575b005b341561004e57600080fd5b610056610058565b005b60003073ffffffffffffffffffffffffffffffffffffffff163190507f221c08a06b07a64803b3787861a3f276212fcccb51c2e6234077a9b8cb13047a6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1682604051808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018281526020019250505060405180910390a16000600154111561011d576000809054906101000a90505061017f565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166108fc829081150290604051600060405180830381858888f19350505050151561017e57600080fd5b5b505600a165627a7a723058204eafa89125ebc22206af46d17837144c84b53d672196b6697a5b2a03292792a30029a165627a7a723058207100ffcfc511d79d6fa57c5fe169c42e1ecac305537b595e7f89e59bb7224f490029",
-  "sourceMap": "52:296:2:-;;;;;;;;;;;;;;;;;",
-  "deployedSourceMap": "52:296:2:-;;;;;;;;;;;;;;;;;;;;;;;;143:203;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;205:13;235:2;239:3;221:22;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;205:38;;252:5;:40;;;;;289:3;261:8;:12;270:2;261:12;;;;;;;;;;;;;;;:24;274:10;261:24;;;;;;;;;;;;;;;;;;;;;;;;;:31;;;252:40;249:92;;;328:5;301:8;:20;310:10;301:20;;;;;;;;;;;;;;;:24;322:2;301:24;;;;;;;;;;;;;;;;:32;;;;;;;;;;;;;;;;;;249:92;143:203;;;;:::o;52:296::-;;;;;;;;;;:::o",
-  "source": "pragma solidity ^0.4.17;\nimport \"./TinyProxy.sol\";\n\ncontract TinyProxyFactory {\n  mapping(address => mapping(address => address)) proxyFor;\n\n  function make(address to, uint gas,  bool track) public {\n    address proxy = new TinyProxy(to, gas);\n    if(track && proxyFor[to][msg.sender] == 0x0) {\n     proxyFor[msg.sender][to] = proxy; \n    } \n  }\n}\n",
-  "sourcePath": "/home/micah/dev/TinyProxyContract/contracts/TinyProxyFactory.sol",
+  "bytecode": "0x6060604052341561000f57600080fd5b6106d68061001e6000396000f30060606040526004361061004c576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806386d9b0c514610051578063eb1e4488146100de575b600080fd5b341561005c57600080fd5b61009c600480803573ffffffffffffffffffffffffffffffffffffffff169060200190919080359060200190919080351515906020019091905050610176565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b34156100e957600080fd5b610134600480803573ffffffffffffffffffffffffffffffffffffffff1690602001909190803573ffffffffffffffffffffffffffffffffffffffff1690602001909190505061035f565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b600083836101826103a1565b808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200182815260200192505050604051809103906000f08015156101d557600080fd5b9050818015610295575060008060008673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16145b1561035557806000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060008673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055505b8090509392505050565b60006020528160005260406000206020528060005260406000206000915091509054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b6040516102f9806103b28339019056006060604052341561000f57600080fd5b6040516040806102f983398101604052808051906020019091908051906020019091905050816000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555080600181905550505061026d8061008c6000396000f300606060405260043610610057576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806386d1a69f146100595780638e1d16cb1461006e578063f7260d3e14610097575b005b341561006457600080fd5b61006c6100ec565b005b341561007957600080fd5b610081610216565b6040518082815260200191505060405180910390f35b34156100a257600080fd5b6100aa61021c565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b60003073ffffffffffffffffffffffffffffffffffffffff163190507f221c08a06b07a64803b3787861a3f276212fcccb51c2e6234077a9b8cb13047a6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1682604051808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018281526020019250505060405180910390a1600060015411156101b1576000809054906101000a905050610213565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166108fc829081150290604051600060405180830381858888f19350505050151561021257600080fd5b5b50565b60015481565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff16815600a165627a7a72305820a9208175f621dc33198f2e384487c9073eab050d0b428213cd318f42ea45b81e0029a165627a7a7230582006d891a1aa4ab8bbb32b828de27557058c1c0852a3e838674f1d7fbbefae60490029",
+  "deployedBytecode": "0x60606040526004361061004c576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806386d9b0c514610051578063eb1e4488146100de575b600080fd5b341561005c57600080fd5b61009c600480803573ffffffffffffffffffffffffffffffffffffffff169060200190919080359060200190919080351515906020019091905050610176565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b34156100e957600080fd5b610134600480803573ffffffffffffffffffffffffffffffffffffffff1690602001909190803573ffffffffffffffffffffffffffffffffffffffff1690602001909190505061035f565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b600083836101826103a1565b808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200182815260200192505050604051809103906000f08015156101d557600080fd5b9050818015610295575060008060008673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16145b1561035557806000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060008673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055505b8090509392505050565b60006020528160005260406000206020528060005260406000206000915091509054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b6040516102f9806103b28339019056006060604052341561000f57600080fd5b6040516040806102f983398101604052808051906020019091908051906020019091905050816000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555080600181905550505061026d8061008c6000396000f300606060405260043610610057576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806386d1a69f146100595780638e1d16cb1461006e578063f7260d3e14610097575b005b341561006457600080fd5b61006c6100ec565b005b341561007957600080fd5b610081610216565b6040518082815260200191505060405180910390f35b34156100a257600080fd5b6100aa61021c565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b60003073ffffffffffffffffffffffffffffffffffffffff163190507f221c08a06b07a64803b3787861a3f276212fcccb51c2e6234077a9b8cb13047a6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1682604051808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018281526020019250505060405180910390a1600060015411156101b1576000809054906101000a905050610213565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166108fc829081150290604051600060405180830381858888f19350505050151561021257600080fd5b5b50565b60015481565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff16815600a165627a7a72305820a9208175f621dc33198f2e384487c9073eab050d0b428213cd318f42ea45b81e0029a165627a7a7230582006d891a1aa4ab8bbb32b828de27557058c1c0852a3e838674f1d7fbbefae60490029",
+  "sourceMap": "52:335:1:-;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "52:335:1:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;150:235;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;82:63;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;150:235;214:13;256:2;260:3;242:22;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;234:30;;273:5;:40;;;;;310:3;282:8;:12;291:2;282:12;;;;;;;;;;;;;;;:24;295:10;282:24;;;;;;;;;;;;;;;;;;;;;;;;;:31;;;273:40;270:92;;;349:5;322:8;:20;331:10;322:20;;;;;;;;;;;;;;;:24;343:2;322:24;;;;;;;;;;;;;;;;:32;;;;;;;;;;;;;;;;;;270:92;375:5;368:12;;150:235;;;;;:::o;82:63::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;52:335::-;;;;;;;;;;:::o",
+  "source": "pragma solidity ^0.4.17;\nimport \"./TinyProxy.sol\";\n\ncontract TinyProxyFactory {\n  mapping(address => mapping(address => address)) public proxyFor;\n\n  function make(address to, uint gas,  bool track) public returns(address proxy){\n    proxy = new TinyProxy(to, gas);\n    if(track && proxyFor[to][msg.sender] == 0x0) {\n     proxyFor[msg.sender][to] = proxy; \n    } \n    return proxy;\n  }\n}\n",
+  "sourcePath": "/home/micah/dev/splitcoin/src/blockchain/TinyProxyContract/contracts/TinyProxyFactory.sol",
   "ast": {
     "attributes": {
-      "absolutePath": "/home/micah/dev/TinyProxyContract/contracts/TinyProxyFactory.sol",
+      "absolutePath": "/home/micah/dev/splitcoin/src/blockchain/TinyProxyContract/contracts/TinyProxyFactory.sol",
       "exportedSymbols": {
         "TinyProxyFactory": [
-          188
+          124
         ]
       }
     },
@@ -49,24 +77,24 @@
             ".17"
           ]
         },
-        "id": 141,
+        "id": 73,
         "name": "PragmaDirective",
-        "src": "0:24:2"
+        "src": "0:24:1"
       },
       {
         "attributes": {
-          "SourceUnit": 140,
-          "absolutePath": "/home/micah/dev/TinyProxyContract/contracts/TinyProxy.sol",
+          "SourceUnit": 72,
+          "absolutePath": "/home/micah/dev/splitcoin/src/blockchain/TinyProxyContract/contracts/TinyProxy.sol",
           "file": "./TinyProxy.sol",
-          "scope": 189,
+          "scope": 125,
           "symbolAliases": [
             null
           ],
           "unitAlias": ""
         },
-        "id": 142,
+        "id": 74,
         "name": "ImportDirective",
-        "src": "25:25:2"
+        "src": "25:25:1"
       },
       {
         "attributes": {
@@ -74,28 +102,28 @@
             null
           ],
           "contractDependencies": [
-            139
+            71
           ],
           "contractKind": "contract",
           "documentation": null,
           "fullyImplemented": true,
           "linearizedBaseContracts": [
-            188
+            124
           ],
           "name": "TinyProxyFactory",
-          "scope": 189
+          "scope": 125
         },
         "children": [
           {
             "attributes": {
               "constant": false,
               "name": "proxyFor",
-              "scope": 188,
+              "scope": 124,
               "stateVariable": true,
               "storageLocation": "default",
               "type": "mapping(address => mapping(address => address))",
               "value": null,
-              "visibility": "internal"
+              "visibility": "public"
             },
             "children": [
               {
@@ -108,9 +136,9 @@
                       "name": "address",
                       "type": "address"
                     },
-                    "id": 143,
+                    "id": 75,
                     "name": "ElementaryTypeName",
-                    "src": "90:7:2"
+                    "src": "90:7:1"
                   },
                   {
                     "attributes": {
@@ -122,33 +150,33 @@
                           "name": "address",
                           "type": "address"
                         },
-                        "id": 144,
+                        "id": 76,
                         "name": "ElementaryTypeName",
-                        "src": "109:7:2"
+                        "src": "109:7:1"
                       },
                       {
                         "attributes": {
                           "name": "address",
                           "type": "address"
                         },
-                        "id": 145,
+                        "id": 77,
                         "name": "ElementaryTypeName",
-                        "src": "120:7:2"
+                        "src": "120:7:1"
                       }
                     ],
-                    "id": 146,
+                    "id": 78,
                     "name": "Mapping",
-                    "src": "101:27:2"
+                    "src": "101:27:1"
                   }
                 ],
-                "id": 147,
+                "id": 79,
                 "name": "Mapping",
-                "src": "82:47:2"
+                "src": "82:47:1"
               }
             ],
-            "id": 148,
+            "id": 80,
             "name": "VariableDeclaration",
-            "src": "82:56:2"
+            "src": "82:63:1"
           },
           {
             "attributes": {
@@ -160,7 +188,7 @@
               ],
               "name": "make",
               "payable": false,
-              "scope": 188,
+              "scope": 124,
               "stateMutability": "nonpayable",
               "superFunction": null,
               "visibility": "public"
@@ -172,7 +200,7 @@
                     "attributes": {
                       "constant": false,
                       "name": "to",
-                      "scope": 187,
+                      "scope": 123,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "address",
@@ -185,20 +213,20 @@
                           "name": "address",
                           "type": "address"
                         },
-                        "id": 149,
+                        "id": 81,
                         "name": "ElementaryTypeName",
-                        "src": "157:7:2"
+                        "src": "164:7:1"
                       }
                     ],
-                    "id": 150,
+                    "id": 82,
                     "name": "VariableDeclaration",
-                    "src": "157:10:2"
+                    "src": "164:10:1"
                   },
                   {
                     "attributes": {
                       "constant": false,
                       "name": "gas",
-                      "scope": 187,
+                      "scope": 123,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "uint256",
@@ -211,20 +239,20 @@
                           "name": "uint",
                           "type": "uint256"
                         },
-                        "id": 151,
+                        "id": 83,
                         "name": "ElementaryTypeName",
-                        "src": "169:4:2"
+                        "src": "176:4:1"
                       }
                     ],
-                    "id": 152,
+                    "id": 84,
                     "name": "VariableDeclaration",
-                    "src": "169:8:2"
+                    "src": "176:8:1"
                   },
                   {
                     "attributes": {
                       "constant": false,
                       "name": "track",
-                      "scope": 187,
+                      "scope": 123,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "bool",
@@ -237,153 +265,174 @@
                           "name": "bool",
                           "type": "bool"
                         },
-                        "id": 153,
+                        "id": 85,
                         "name": "ElementaryTypeName",
-                        "src": "180:4:2"
+                        "src": "187:4:1"
                       }
                     ],
-                    "id": 154,
+                    "id": 86,
                     "name": "VariableDeclaration",
-                    "src": "180:10:2"
+                    "src": "187:10:1"
                   }
                 ],
-                "id": 155,
+                "id": 87,
                 "name": "ParameterList",
-                "src": "156:35:2"
-              },
-              {
-                "attributes": {
-                  "parameters": [
-                    null
-                  ]
-                },
-                "children": [],
-                "id": 156,
-                "name": "ParameterList",
-                "src": "199:0:2"
+                "src": "163:35:1"
               },
               {
                 "children": [
                   {
                     "attributes": {
-                      "assignments": [
-                        158
-                      ]
+                      "constant": false,
+                      "name": "proxy",
+                      "scope": 123,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
                     },
                     "children": [
                       {
                         "attributes": {
-                          "constant": false,
-                          "name": "proxy",
-                          "scope": 187,
-                          "stateVariable": false,
-                          "storageLocation": "default",
-                          "type": "address",
-                          "value": null,
-                          "visibility": "internal"
+                          "name": "address",
+                          "type": "address"
                         },
-                        "children": [
-                          {
-                            "attributes": {
-                              "name": "address",
-                              "type": "address"
-                            },
-                            "id": 157,
-                            "name": "ElementaryTypeName",
-                            "src": "205:7:2"
-                          }
-                        ],
-                        "id": 158,
-                        "name": "VariableDeclaration",
-                        "src": "205:13:2"
-                      },
+                        "id": 88,
+                        "name": "ElementaryTypeName",
+                        "src": "214:7:1"
+                      }
+                    ],
+                    "id": 89,
+                    "name": "VariableDeclaration",
+                    "src": "214:13:1"
+                  }
+                ],
+                "id": 90,
+                "name": "ParameterList",
+                "src": "213:15:1"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
                       {
                         "attributes": {
                           "argumentTypes": null,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
-                          "isStructConstructorCall": false,
                           "lValueRequested": false,
-                          "names": [
-                            null
-                          ],
-                          "type": "contract TinyProxy",
-                          "type_conversion": false
+                          "operator": "=",
+                          "type": "address"
                         },
                         "children": [
                           {
                             "attributes": {
-                              "argumentTypes": [
-                                {
-                                  "typeIdentifier": "t_address",
-                                  "typeString": "address"
-                                },
-                                {
-                                  "typeIdentifier": "t_uint256",
-                                  "typeString": "uint256"
-                                }
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
                               ],
+                              "referencedDeclaration": 89,
+                              "type": "address",
+                              "value": "proxy"
+                            },
+                            "id": 91,
+                            "name": "Identifier",
+                            "src": "234:5:1"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": false,
+                              "isStructConstructorCall": false,
                               "lValueRequested": false,
-                              "type": "function (address,uint256) returns (contract TinyProxy)"
+                              "names": [
+                                null
+                              ],
+                              "type": "contract TinyProxy",
+                              "type_conversion": false
                             },
                             "children": [
                               {
                                 "attributes": {
-                                  "contractScope": null,
-                                  "name": "TinyProxy",
-                                  "referencedDeclaration": 139,
-                                  "type": "contract TinyProxy"
+                                  "argumentTypes": [
+                                    {
+                                      "typeIdentifier": "t_address",
+                                      "typeString": "address"
+                                    },
+                                    {
+                                      "typeIdentifier": "t_uint256",
+                                      "typeString": "uint256"
+                                    }
+                                  ],
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "type": "function (address,uint256) returns (contract TinyProxy)"
                                 },
-                                "id": 159,
-                                "name": "UserDefinedTypeName",
-                                "src": "225:9:2"
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "contractScope": null,
+                                      "name": "TinyProxy",
+                                      "referencedDeclaration": 71,
+                                      "type": "contract TinyProxy"
+                                    },
+                                    "id": 92,
+                                    "name": "UserDefinedTypeName",
+                                    "src": "246:9:1"
+                                  }
+                                ],
+                                "id": 93,
+                                "name": "NewExpression",
+                                "src": "242:13:1"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 82,
+                                  "type": "address",
+                                  "value": "to"
+                                },
+                                "id": 94,
+                                "name": "Identifier",
+                                "src": "256:2:1"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 84,
+                                  "type": "uint256",
+                                  "value": "gas"
+                                },
+                                "id": 95,
+                                "name": "Identifier",
+                                "src": "260:3:1"
                               }
                             ],
-                            "id": 160,
-                            "name": "NewExpression",
-                            "src": "221:13:2"
-                          },
-                          {
-                            "attributes": {
-                              "argumentTypes": null,
-                              "overloadedDeclarations": [
-                                null
-                              ],
-                              "referencedDeclaration": 150,
-                              "type": "address",
-                              "value": "to"
-                            },
-                            "id": 161,
-                            "name": "Identifier",
-                            "src": "235:2:2"
-                          },
-                          {
-                            "attributes": {
-                              "argumentTypes": null,
-                              "overloadedDeclarations": [
-                                null
-                              ],
-                              "referencedDeclaration": 152,
-                              "type": "uint256",
-                              "value": "gas"
-                            },
-                            "id": 162,
-                            "name": "Identifier",
-                            "src": "239:3:2"
+                            "id": 96,
+                            "name": "FunctionCall",
+                            "src": "242:22:1"
                           }
                         ],
-                        "id": 163,
-                        "name": "FunctionCall",
-                        "src": "221:22:2"
+                        "id": 97,
+                        "name": "Assignment",
+                        "src": "234:30:1"
                       }
                     ],
-                    "id": 164,
-                    "name": "VariableDeclarationStatement",
-                    "src": "205:38:2"
+                    "id": 98,
+                    "name": "ExpressionStatement",
+                    "src": "234:30:1"
                   },
                   {
                     "attributes": {
@@ -411,13 +460,13 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 154,
+                              "referencedDeclaration": 86,
                               "type": "bool",
                               "value": "track"
                             },
-                            "id": 165,
+                            "id": 99,
                             "name": "Identifier",
-                            "src": "252:5:2"
+                            "src": "273:5:1"
                           },
                           {
                             "attributes": {
@@ -460,13 +509,13 @@
                                           "overloadedDeclarations": [
                                             null
                                           ],
-                                          "referencedDeclaration": 148,
+                                          "referencedDeclaration": 80,
                                           "type": "mapping(address => mapping(address => address))",
                                           "value": "proxyFor"
                                         },
-                                        "id": 166,
+                                        "id": 100,
                                         "name": "Identifier",
-                                        "src": "261:8:2"
+                                        "src": "282:8:1"
                                       },
                                       {
                                         "attributes": {
@@ -474,18 +523,18 @@
                                           "overloadedDeclarations": [
                                             null
                                           ],
-                                          "referencedDeclaration": 150,
+                                          "referencedDeclaration": 82,
                                           "type": "address",
                                           "value": "to"
                                         },
-                                        "id": 167,
+                                        "id": 101,
                                         "name": "Identifier",
-                                        "src": "270:2:2"
+                                        "src": "291:2:1"
                                       }
                                     ],
-                                    "id": 168,
+                                    "id": 102,
                                     "name": "IndexAccess",
-                                    "src": "261:12:2"
+                                    "src": "282:12:1"
                                   },
                                   {
                                     "attributes": {
@@ -505,23 +554,23 @@
                                           "overloadedDeclarations": [
                                             null
                                           ],
-                                          "referencedDeclaration": 200,
+                                          "referencedDeclaration": 136,
                                           "type": "msg",
                                           "value": "msg"
                                         },
-                                        "id": 169,
+                                        "id": 103,
                                         "name": "Identifier",
-                                        "src": "274:3:2"
+                                        "src": "295:3:1"
                                       }
                                     ],
-                                    "id": 170,
+                                    "id": 104,
                                     "name": "MemberAccess",
-                                    "src": "274:10:2"
+                                    "src": "295:10:1"
                                   }
                                 ],
-                                "id": 171,
+                                "id": 105,
                                 "name": "IndexAccess",
-                                "src": "261:24:2"
+                                "src": "282:24:1"
                               },
                               {
                                 "attributes": {
@@ -536,19 +585,19 @@
                                   "type": "int_const 0",
                                   "value": "0x0"
                                 },
-                                "id": 172,
+                                "id": 106,
                                 "name": "Literal",
-                                "src": "289:3:2"
+                                "src": "310:3:1"
                               }
                             ],
-                            "id": 173,
+                            "id": 107,
                             "name": "BinaryOperation",
-                            "src": "261:31:2"
+                            "src": "282:31:1"
                           }
                         ],
-                        "id": 174,
+                        "id": 108,
                         "name": "BinaryOperation",
-                        "src": "252:40:2"
+                        "src": "273:40:1"
                       },
                       {
                         "children": [
@@ -591,13 +640,13 @@
                                               "overloadedDeclarations": [
                                                 null
                                               ],
-                                              "referencedDeclaration": 148,
+                                              "referencedDeclaration": 80,
                                               "type": "mapping(address => mapping(address => address))",
                                               "value": "proxyFor"
                                             },
-                                            "id": 175,
+                                            "id": 109,
                                             "name": "Identifier",
-                                            "src": "301:8:2"
+                                            "src": "322:8:1"
                                           },
                                           {
                                             "attributes": {
@@ -617,23 +666,23 @@
                                                   "overloadedDeclarations": [
                                                     null
                                                   ],
-                                                  "referencedDeclaration": 200,
+                                                  "referencedDeclaration": 136,
                                                   "type": "msg",
                                                   "value": "msg"
                                                 },
-                                                "id": 176,
+                                                "id": 110,
                                                 "name": "Identifier",
-                                                "src": "310:3:2"
+                                                "src": "331:3:1"
                                               }
                                             ],
-                                            "id": 177,
+                                            "id": 111,
                                             "name": "MemberAccess",
-                                            "src": "310:10:2"
+                                            "src": "331:10:1"
                                           }
                                         ],
-                                        "id": 179,
+                                        "id": 113,
                                         "name": "IndexAccess",
-                                        "src": "301:20:2"
+                                        "src": "322:20:1"
                                       },
                                       {
                                         "attributes": {
@@ -641,18 +690,18 @@
                                           "overloadedDeclarations": [
                                             null
                                           ],
-                                          "referencedDeclaration": 150,
+                                          "referencedDeclaration": 82,
                                           "type": "address",
                                           "value": "to"
                                         },
-                                        "id": 178,
+                                        "id": 112,
                                         "name": "Identifier",
-                                        "src": "322:2:2"
+                                        "src": "343:2:1"
                                       }
                                     ],
-                                    "id": 180,
+                                    "id": 114,
                                     "name": "IndexAccess",
-                                    "src": "301:24:2"
+                                    "src": "322:24:1"
                                   },
                                   {
                                     "attributes": {
@@ -660,59 +709,94 @@
                                       "overloadedDeclarations": [
                                         null
                                       ],
-                                      "referencedDeclaration": 158,
+                                      "referencedDeclaration": 89,
                                       "type": "address",
                                       "value": "proxy"
                                     },
-                                    "id": 181,
+                                    "id": 115,
                                     "name": "Identifier",
-                                    "src": "328:5:2"
+                                    "src": "349:5:1"
                                   }
                                 ],
-                                "id": 182,
+                                "id": 116,
                                 "name": "Assignment",
-                                "src": "301:32:2"
+                                "src": "322:32:1"
                               }
                             ],
-                            "id": 183,
+                            "id": 117,
                             "name": "ExpressionStatement",
-                            "src": "301:32:2"
+                            "src": "322:32:1"
                           }
                         ],
-                        "id": 184,
+                        "id": 118,
                         "name": "Block",
-                        "src": "294:47:2"
+                        "src": "315:47:1"
                       }
                     ],
-                    "id": 185,
+                    "id": 119,
                     "name": "IfStatement",
-                    "src": "249:92:2"
+                    "src": "270:92:1"
+                  },
+                  {
+                    "attributes": {
+                      "functionReturnParameters": 90
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "overloadedDeclarations": [
+                            null
+                          ],
+                          "referencedDeclaration": 89,
+                          "type": "address",
+                          "value": "proxy"
+                        },
+                        "id": 120,
+                        "name": "Identifier",
+                        "src": "375:5:1"
+                      }
+                    ],
+                    "id": 121,
+                    "name": "Return",
+                    "src": "368:12:1"
                   }
                 ],
-                "id": 186,
+                "id": 122,
                 "name": "Block",
-                "src": "199:147:2"
+                "src": "228:157:1"
               }
             ],
-            "id": 187,
+            "id": 123,
             "name": "FunctionDefinition",
-            "src": "143:203:2"
+            "src": "150:235:1"
           }
         ],
-        "id": 188,
+        "id": 124,
         "name": "ContractDefinition",
-        "src": "52:296:2"
+        "src": "52:335:1"
       }
     ],
-    "id": 189,
+    "id": 125,
     "name": "SourceUnit",
-    "src": "0:349:2"
+    "src": "0:388:1"
   },
   "compiler": {
     "name": "solc",
     "version": "0.4.18+commit.9cf6e910.Emscripten.clang"
   },
-  "networks": {},
+  "networks": {
+    "1522030805008": {
+      "events": {},
+      "links": {},
+      "address": "0x37b2efd783a07fa756e9c25e95a6a81de9913286"
+    },
+    "1522031272391": {
+      "events": {},
+      "links": {},
+      "address": "0xcd8893892d41b3642c27bc9dfb721efc83947c36"
+    }
+  },
   "schemaVersion": "1.0.1",
-  "updatedAt": "2018-03-23T03:31:29.747Z"
+  "updatedAt": "2018-03-26T23:10:43.505Z"
 }

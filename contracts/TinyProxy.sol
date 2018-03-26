@@ -15,11 +15,11 @@ contract TinyProxy {
 
   function release() public {
     uint balance = address(this).balance;
-    FundsReleased(receiver, balance);
     if(gasBudget > 0){
-      receiver.call.gas(gasBudget).value(balance);
+      require(receiver.call.gas(gasBudget).value(balance)());
     } else {
       receiver.transfer(balance);
     }
+    FundsReleased(receiver, balance);
   }
 }
