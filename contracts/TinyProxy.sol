@@ -18,7 +18,7 @@ contract TinyProxy {
     if(gasBudget > 0){
       require(receiver.call.gas(gasBudget).value(balance)());
     } else {
-      receiver.transfer(balance);
+      require(receiver.send(balance));
     }
     FundsReleased(receiver, balance);
   }
