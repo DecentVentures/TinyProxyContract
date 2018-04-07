@@ -12,7 +12,7 @@ contract("TinyProxyFactory", accounts => {
       let factory = await TinyProxyFactory.deployed();
       let proxy = await factory.make(accounts[1], 0, true);
       assert.equal(proxy != null, true, "The proxy should be created");
-      const proxyAddr = await factory.proxyFor.call(accounts[0], accounts[1]);
+      const proxyAddr = await factory.proxyFor.call(accounts[1], 0);
       assert.equal(proxyAddr != null, true, "The proxy should be tracked");
     });
   });
