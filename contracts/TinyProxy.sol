@@ -9,9 +9,12 @@ contract TinyProxy {
     gasBudget = proxyGas;
   }
 
-  function () payable public { }
-
+  event FundsReceived(uint amount);
   event FundsReleased(address to, uint amount);
+
+  function () payable public {
+    emit FundsReceived(msg.value);
+  }
 
   function release() public {
     uint balance = address(this).balance;
@@ -20,6 +23,6 @@ contract TinyProxy {
     } else {
       require(receiver.send(balance));
     }
-    FundsReleased(receiver, balance);
+    emit FundsReleased(receiver, balance);
   }
 }
