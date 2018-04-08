@@ -7,12 +7,21 @@ contract TinyProxyFactory {
 
   event ProxyDeployed(address to, uint gas);
   function make(address to, uint gas, bool track) public returns(address proxy){
-    proxy = new TinyProxy(to, gas);
-    if(track) {
+    proxy = proxyFor[to][gas];
+    if(proxy == 0x0) {
+      proxy = new TinyProxy(to, gas);
       proxyFor[to][gas] = proxy;
+      emit ProxyDeployed(to, gas);
+    }
+    if(track) {
       userProxies[msg.sender].push(proxy);
     }
-    emit ProxyDeployed(to, gas);
     return proxy;
+  }
+
+  function untrack(uint index) public {
+    uint lastProxy = userProxies[msg.sender].length - 1;
+    userProxies[msg.sender][index] = userProxies[msg.sender][lastProxy];
+    delete userProxies[msg.sender][lastProxy];
   }
 }
